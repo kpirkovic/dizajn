@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="mk">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="sign-in-style.css">
+        <title>Dizajn</title>
+    </head>
+    <body>
+        <!--Sites Loader-->
+        <div class="loading-screen">
+            <div class="loader"></div>
+            <div class="loader l-two"></div>
+            <div class="loader l-three"></div>
+            <div class="white-screen"></div>
+        </div>
+        <!--Sites Nav-->
+        <nav>
+            <!--Sites Logo wraped inside a link so it navigates to main page-->
+            <a class="logo" href="../index.html">
+                <img src="../Assets/Logo.svg" alt="Logo">
+                <h2>Dizajn</h2>
+            </a>
+        </nav>
+        <!--Sites Main-->
+        <main>
+            <!--Sign in Section-->
+            <section class="sign-in-section">
+                <!--Sign in Form-->
+                <form action="" method="post" class="sign-in-form">
+                    <img class="profile-img" src="../Assets/Avatars.svg" alt="Profile Image">
+                    <!--Input Wraper-->
+                    <div class="profile-input-wraper">
+                        <i class="fas fa-user"></i>
+                        <input type="email" name="email" id="email" placeholder="Емаил">
+                    </div>
+                    <div class="profile-input-wraper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" id="password" placeholder="Лозинка">
+                    </div>
+                    <input type="submit" value="Најави Се">
+                    <!--Sign Up Wraper-->
+                    <div class="sign-up">
+                        <span>Немате акаунт?</span>
+                        <!--Sign Up Link-->
+                        <a href="#">Пријавете Се</a>
+                    </div>
+                </form>
+                <!--Go Back Link-->
+                <a class="go-back" href="../index.html">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Вратете се назад</span>
+                </a>
+            </section>
+        </main>
+    </body>
+</html>

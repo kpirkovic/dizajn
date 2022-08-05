@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="mk">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <title>Dizajn</title>
+    </head>
+    <body>
+        <!--Loading Screen Wraper-->
+        <div class="loading-screen">
+            <div class="loader"></div>
+            <div class="loader l-two"></div>
+            <div class="loader l-three"></div>
+            <div class="white-screen"></div>
+        </div>
+        <!--Main Nav Bar-->
+        <nav aria-label="Site Menu">
+            <!--Sites Contianer-->
+            <div class="container">
+                <div class="nav-wraper">
+                    <input type="checkbox" id="nav-mobile-checkbox">
+                    <!--Site Logo-->
+                    <a class="logo" href="#">
+                        <img src="./Assets/Logo.svg" alt="Logo">
+                        <h2>Dizajn</h2>
+                    </a>
+                    <!--Mobile Hamburger Menu-->
+                    <label class="nav-mobile-menu" for="nav-mobile-checkbox">
+                        <i id="hamburger-open" class="fas fa-bars"></i>
+                        <i id="hamburger-closed" class="fas fa-times"></i>
+                    </label>
+
+                    <!--Main Nav Wraper-->
+                    <ul class="nav-list">
+                        <!--Main Nav Links-->
+                        <div class="nav-links-wraper">
+                            <!--Main Link-->
+                            <li class="nav-list-links">
+                                <a href="#">Курсеви<i class="fas fa-caret-down"></i></a>
+                            </li>
+                            <!--Courses Wraper-->
+                            <ul class="nav-drop-list">
+                                <li class="nav-list-links">
+                                    <i class="fas fa-code"></i>
+                                    <a href="#">Javascript Бесплатен Курс</a>
+                                </li>
+                                <li class="nav-list-links">
+                                    <i class="fas fa-laptop"></i>
+                                    <a href="#">Основи на Фрееленцинг Бесплатен Курс</a>
+                                </li>
+                                <li class="nav-list-links">
+                                    <i class="fas fa-object-ungroup"></i>
+                                    <a href="#">4 Неделен Курс по UI/UX</a>
+                                </li>
+                                <li class="nav-list-links">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <a href="#">Академија по Графички Дизајн</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Nav Wraper-->
+                        <div class="nav-links-wraper">
+                            <!--Main Link-->
+                            <li class="nav-list-links">
+                                <a href="#">Пордавница<i class="fas fa-caret-down"></i></a>
+                            </li>
+                            <!--Drop Down Wraper-->
+                            <ul class="nav-drop-list">
+                                <li class="nav-list-links">
+                                    <i class="fas fa-heading"></i>
+                                    <a href="#">Кирилични Фонтови</a>
+                                </li>
+                                <li class="nav-list-links">
+                                    <i class="fab fa-wordpress"></i>
+                                    <a href="#">Теми за Wordpress</a>
+                                </li>
+                                <li class="nav-list-links">
+                                    <i class="fas fa-object-ungroup"></i>
+                                    <a href="#">Иконки/UX</a>
+                                </li>
+                                <li class="nav-list-links">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <a href="#">Илустраци и Анимации</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Jobs Wraper-->
+                        <div class="nav-links-wraper">
+                            <!--Main Link-->
+                            <li class="nav-list-links">
+                                <a href="#">Вработување<i class="fas fa-caret-down"></i></a>
+                            </li>
+                            <!--Dropdown Wraper-->
+                            <ul class="nav-drop-list">
+                                <li class="nav-list-links">
+                                    <i class="fas fa-briefcase"></i>
+                                    <a href="#">Најди Работа</a>
+                                </li>
+                                <li class="nav-list-links">
+                                    <i class="fas fa-laptop"></i>
+                                    <a href="#">Најди Проекти</a>
+                                </li>
+                                <li class="nav-list-links">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                    <a href="#">Објави Рабта или Проект</a>
+                                </li>
+                                <li class="nav-list-links">
+                                    <i class="fas fa-desktop"></i>
+                                    <a href="#">Вработи се кај нас</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Sign In Button-->
+                        <li>
+                            <a class="main-btn" href="./Sign In Page/sign-in-page.html">Најави Се</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Main Content-->
+        <main>
+            <!--Hero Section-->
+            <section class="hero-section">
+                <!--Sites Header-->
+                <header>
+                    <!--Header Wraped in Link so it can be clicked -->
+                    <a href="#content">
+                        <!--Main H1 Heading-->
+                        <h1 class="main-heading">
+                            <!--H1 is wrapred in spans to be animated with keyframes-->
+                            <span>Откријте ги најдобрите<br></span>
+                            <span>експерти по Дизајн<br></span>
+                            <span>во Македонија!</span>
+                        </h1>
+                        <!--This is lootie animation it shows when you hover the Header-->
+                        <lottie-player class="scroll-lootie" src="https://assets7.lottiefiles.com/packages/lf20_tmmt2y0f.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                    </a>
+                </header>
+                <!--Hero Artworks Wraper(This are decorations)-->
+                <div class="artworks">
+                    <img class="notebook-artwork" src="./Assets/Notebook Artwork.png" alt="">
+                    <img class="text-artwork" src="./Assets/Text Artwork.png" alt="">
+                    <img class="image-artwork" src="./Assets/Image Artwork.png" alt="">
+                    <img class="heart-artwork" src="./Assets/Heart Artwork.png" alt="">
+                </div>
+            </section>
+            <!--Secondary Filter Nav-->
+            <nav class="secondary-nav" aria-label="Filters Menu">
+                <!--Sites Container-->
+                <div class="container">
+                    <!--Filters Inputs Wraper-->
+                    <div class="content-filter">
+                        <input type="radio" name="tab" id="popular" checked>
+                        <input type="radio" name="tab" id="animation">
+                        <input type="radio" name="tab" id="branding">
+                        <input type="radio" name="tab" id="illustration">
+                        <input type="radio" name="tab" id="mobile">
+                        <input type="radio" name="tab" id="typography">
+                        <input type="radio" name="tab" id="product-design">
+                        <input type="radio" name="tab" id="web-design">
+
+                        <!--Secondary Filter Icon-->
+                        <input type="checkbox" id="drop-down-filter">
+                        <label for="drop-down-filter" class="drop-down-filter">  
+                            <img src="./Assets/Filters icon.svg" alt="Filters icon">                      
+                        </label>
+                        <!--This is Secondary Filter Dropdown-->
+                        <div class="drop-filter-options">
+                            <div>
+                                <input class="drop-filter-checkbox" type="checkbox" name="filter-checkbox" id="filter-opt-one" checked>
+                                <label class="drop-filter-label" for="filter-opt-one">Артикли</label>
+                            </div>
+                            <div>
+                                <input class="drop-filter-checkbox" type="checkbox" name="filter-checkbox" id="filter-opt-two" checked>
+                                <label class="drop-filter-label" for="filter-opt-two">Проекти</label>
+                            </div>
+                            <div>
+                                <input class="drop-filter-checkbox" type="checkbox" name="filter-checkbox" id="filter-opt-three" checked>
+                                <label class="drop-filter-label" for="filter-opt-three">Реклами</label>
+                            </div>
+                        </div>
+                        <!--Filter Labels Wraper-->
+                        <div class="filters">
+                            <div>
+                                <div class="slider"></div>
+                                <label class="popular" for="popular">Популарно</label>
+                                <label id="btn-click" class="animation" for="animation">Анимации</label>
+                                <label class="branding" for="branding">Брендинг</label>
+                                <label class="illustration" for="illustration">Илустрации</label>
+                                <label class="mobile" for="mobile">UI/UX</label>
+                                <label class="typography" for="typography">Типографија</label>
+                                <label class="product-design" for="product-design">Продукт Дизајн</label>
+                                <label class="web-design" for="web-design">Веб Дизајн</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--Sites Content Section-->
+            <section id="content" class="content-section">
+                <!--Sites Container with combo class to strech on big screens-->
+                <div class="container c-big">
+                    <!--Contents Wraper-->
+                    <div class="showcase">
+                        <!--Articles Wraper-->
+                        <article class="block">
+                            <a href="./Articles/article.html">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_x62chJ.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Проект</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block">
+                            <a href="./Articles/article.html">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <img src="./Assets/Blog Post 01 Image.jpg" alt="Blog Post Image">
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Статија</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block col-span-2">
+                            <a href="./Articles/article.html">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <img src="./Assets/Ilustartion 01.jpg" alt="Illustartion Image">
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Статија</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block">
+                            <a href="./Articles/article.html">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <img src="./Assets/Ilustartion 02.jpg" alt="Illustartion Image">
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Проект</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block col-span-2">
+                            <a href="#" target="_blank">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <img src="./Assets/Brading 01.jpg" alt="Ad Image">
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Реклама</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block">
+                           <a href="./Articles/article.html">
+                               <!--This is where we store the main content-->
+                               <div class="b-content">
+                                   <lottie-player src="https://assets10.lottiefiles.com/datafiles/d9bc9kYC2VttaKb/data.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Проект</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                           </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block">
+                            <a href="./Articles/article.html">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <img src="./Assets/Web Design 01.jpg" alt="Web Design Image">
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Проект</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block">
+                            <a href="./Articles/article.html">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <img src="./Assets/Blog Post 02 Image.jpg" alt="Blog Image">
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Статија</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block">
+                            <a href="./Articles/article.html">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <img src="./Assets/App Design.jpg" alt="App Design Image">
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Проект</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block">
+                            <a href="./Articles/article.html">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_94avvdlr.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Проект</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block">
+                            <a href="./Articles/article.html">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <img src="./Assets/Logo Project.jpg" alt="Logo Project Image">
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Проект</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Newsletter Wraper-->
+                        <div class="block col-span-2">
+                            <div class="newsletter">
+                                <!--Newsletter Cta Wraper-->
+                                <div class="newsletter-cta">
+                                    <!--Newsletter Copy-->
+                                    <div class="newsletter-content">
+                                        <h4>Newsletter</h4>
+                                        <p>Дизјанот константо се менува, затоа зачленете се на нашиот newsletter за да бидете во тек со промените.</p>
+                                    </div>
+                                    <!--Newsletter Form-->
+                                    <div class="newsletter-form">
+                                        <form action="" method="post">
+                                            <input type="text" id="name" name="name" required placeholder="Име">
+                                            <input type="email" id="email" name="email" required placeholder="Емаил">
+                                            <input type="submit" value="Известувај ме">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Articles Wraper-->
+                        <article class="block">
+                            <a href="./Articles/article.html">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <img src="./Assets/Business Card.jpg" alt="Business Card Image">
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Статија</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block col-span-2">
+                            <a href="#" target="_blank">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <img src="./Assets/Product.png" alt="Ad Image">
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Реклама</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block">
+                            <a href="#" target="_blank">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <img src="./Assets/Studying Ad.gif" alt="Ad Image">
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Реклама</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <!--Articles Wraper-->
+                        <article class="block">
+                            <a href="./Articles/article.html">
+                                <!--This is where we store the main content-->
+                                <div class="b-content">
+                                    <img src="./Assets/App Project 02.png" alt="App Project Image">
+                                </div>
+                                <!--This is what we show when we hover on the main content-->
+                                <div class="b-hover">
+                                    <span>Проект</span>
+                                    <div>
+                                        <h5>Наслов</h5>
+                                        <p>Тука ќе биде опишана кратката дескрипција за проектот или акртиклот.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--Sites Footer-->
+        <footer>
+            <!--Sites Container-->
+            <div class="container">
+               <div class="footer-wraper">
+                   <!--Footer Blocks-->
+                    <div class="footer-blocks">
+                        <!--Company Logo-->
+                        <div class="logo">
+                            <img src="./Assets/Logo.svg" alt="Logo">
+                            <h2>Dizajn</h2>
+                        </div>
+                        <!--Company Mission-->
+                        <p class="company-info">
+                            Dizajn е онлајн платформа каде Македонските Дизајнери
+                            добиваат шанса да ги споделат своите вештини и идеии во Дизајн Индустријата.
+                        </p>
+                        <!--Footer Links Wraper-->
+                        <ul class="social-icons">
+                            <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+                            <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+                            <li><a href="https://linked.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <!--Footer Blocks-->
+                    <div class="footer-blocks">
+                        <h3>За Дизајнери</h5>
+                        <!--Footer Links Wraper-->   
+                        <ul>
+                            <li><a href="#" target="_blank">Работа</a></li>
+                            <li><a href="#" target="_blank">Состаноци</a></li>
+                            <li><a href="#" target="_blank">Заработувачка</a></li>
+                            <li><a href="#" target="_blank">Кодекс на Постирање</a></li>
+                        </ul>
+                    </div>
+                    <!--Footer Blocks-->
+                    <div class="footer-blocks">
+                        <h3>За Компанијата</h5>
+                        <!--Footer Links Wraper-->    
+                        <ul>
+                            <li><a href="#" target="_blank">За Нас</a></li>
+                            <li><a href="#" target="_blank">Кариери</a></li>
+                            <li><a href="#" target="_blank">Подршка</a></li>
+                            <li><a href="#" target="_blank">Услови за користење</a></li>
+                            <li><a href="#" target="_blank">Политика за приватност</a></li>
+                        </ul>
+                    </div>
+                    <!--Footer Blocks-->
+                    <div class="footer-blocks">
+                        <h3>За Клиентите</h5>
+                        <!--Footer Links Wraper-->   
+                        <ul>
+                            <li><a href="#" target="_blank">Вработете дизајнер</a></li>
+                            <li><a href="#" target="_blank">Рекламирајте се кај нас</a></li>
+                            <li><a href="#" target="_blank">Објавете хонорарен проект</a></li>
+                            <li><a href="#" target="_blank">Објавете отворено работно место</a></li>
+                        </ul>
+                    </div>
+                    <!--Footer Blocks-->
+                    <div class="footer-blocks">
+                        <h3>Образование</h5>
+                        <!--Footer Links Wraper-->   
+                        <ul>
+                            <li><a href="#" target="_blank">Купи Дизајни</a></li>
+                            <li><a href="#" target="_blank">Најдобри Алатки</a></li>
+                            <li><a href="#" target="_blank">Академии по дизајн</a></li>
+                            <li><a href="#" target="_blank">Курсеви по дизајн</a></li>
+                        </ul>
+                    </div>
+               </div>
+               <!--Footer Copyright-->
+               <div class="copyright-wraper">
+                   <span>2022 Dizajn. All rights reserved.</span>
+                   <span>Made with <i class="fas fa-heart"></i> by <a class="contact-designer" href="mailto:kristijanpirkovic@gmail.com"  >Kristijan Pirkovic</a></span>
+               </div>
+            </div>
+        </footer>
+    </body>
+</html>

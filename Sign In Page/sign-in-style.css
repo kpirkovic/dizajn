@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    color: #1b1b2b;
+}
+::selection {
+    background-color: #7875E9;
+    color: white;
+}
+.loader {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #7875E9;
+    animation: openerLoad 1s forwards 200ms ease;
+}
+.l-two {
+    animation-delay: 300ms;
+    background-color: #928ef5;
+    z-index: 998;
+}
+.l-three {
+    animation-delay: 400ms;
+    background-color: #ecc1df;
+    z-index: 997;
+}
+.white-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+    pointer-events: none;
+    background-color: white;
+    animation: fadeOut 800ms forwards 1s ease;
+}
+nav {
+    position: absolute;
+    top: 2.5%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #222349;
+}
+.logo img{
+    width: 3rem;
+}
+.logo h2{
+    margin-left: .5rem;
+}
+.sign-in-section {
+    display: flex;
+    flex-direction: column;
+    padding: 15rem 0 2rem 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url(../Assets/Gradient.jpg);
+    background-size: cover;
+}
+.sign-up a{
+    text-decoration: none;
+    color: #272549;
+    position: relative;
+    transition: color 250ms ease;
+}
+.sign-up a:hover{
+   color: #6561db;
+}
+.profile-img {
+    width: 5.9rem;
+    margin-bottom: 1.25rem;
+}
+.profile-input-wraper {
+    width: 100%;
+    position: relative;
+}
+.profile-input-wraper i{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    color: #353452;
+    pointer-events: none;
+}
+.sign-in-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dbdbe7;
+    padding: clamp(2rem, 5vw, 5rem);
+    width: clamp(7rem, 100vw, 35rem);
+    border-radius: .65rem;
+}
+.sign-in-form input{
+    display: block;
+    padding: .5rem .5rem .5rem 2.5rem;
+    width: 100%;
+    outline: none;
+    font-size: 1.05rem;
+    border: none;
+    margin-bottom: .7rem;
+    border-radius: 5px;
+    font-family: 'Nunito';
+}
+.sign-in-form input:-webkit-autofill{
+  box-shadow: 0 0 0px 1000px rgb(235, 235, 241) inset;
+}
+.sign-in-form input[type="submit"]{
+    background-color: #6561db;
+    padding: .58rem;
+    color: #dfdef1;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 250ms ease;
+}
+.sign-in-form input[type="submit"]:hover{
+    background-color: #e7b1d7;
+    color: #493e46;
+}
+.go-back {
+    color: #272549;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 300ms ease;
+}
+.go-back:hover {
+    color: #6561db;
+}
+.go-back:hover > i {
+    transform: translateX(-.5rem);
+}
+.go-back i{
+    font-size: 1rem;
+    transition: transform 300ms ease;
+}
+@keyframes openerLoad {
+    0% {
+        height: 100vh;
+        visibility: visible;
+    }
+    100% {
+        height: 0;
+        visibility: hidden;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
