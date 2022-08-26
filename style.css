@@ -69,11 +69,13 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    width: clamp(30px, 5vw, 45px);
     z-index: 998;
     transition: filter 300ms ease;
     text-decoration: none;
     filter: brightness(1);
+}
+.logo img {
+    width: clamp(35px, 5vw, 45px);
 }
 /* Logo Heading */
 .logo h2 {
